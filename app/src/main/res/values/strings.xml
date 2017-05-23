@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My PKRU</string>
+    <string name="login">ลงชื่อเข้าใช้งาน</string>
+    <string name="user">User :</string>
+    <string name="password">Password :</string>
+    <string name="new_register">New Register</string>
 </resources>
