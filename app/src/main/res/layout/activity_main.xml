@@ -38,6 +38,7 @@
                 android:layout_height="wrap_content" />
 
             <EditText
+                android:id="@+id/edtUser"
                 android:textColor="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimary"
                 android:hint="@string/user"
@@ -58,6 +59,7 @@
                 android:layout_height="wrap_content" />
 
             <EditText
+                android:id="@+id/edtPassword"
                 android:textColor="@color/colorPrimaryDark"
                 android:textColorHint="@color/colorPrimary"
                 android:hint="@string/password"
@@ -68,7 +70,8 @@
         </LinearLayout>
         <!--This is NewRegister-->
         <TextView
-
+            android:clickable="true"
+            android:id="@+id/txtNewReginter"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             android:textSize="@dimen/h2"
@@ -81,6 +84,9 @@
 
 
     <Button
+        android:id="@+id/btnLogin"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
         android:text="@string/login"
         android:layout_width="match_parent"
