@@ -47,15 +47,19 @@ public class NewRegisterActivity extends AppCompatActivity implements View.OnCli
 
             //Show Image
             humenUri = data.getData();
+            try {
                 try {
-                Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(humenUri));
-                humenImageView.setImageBitmap(bitmap);
+                    Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(humenUri));
+                    humenImageView.setImageBitmap(bitmap);
 
                     findpathAnName(humenUri);
 
 
-            } catch (Exception e) {
-                Log.d("24Mayv1", "e HumanUri ==>" + e.toString());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }catch (Exception e) {
+                Log.d("24MayV1", "e HumanUri ==>" + e.toString());
             }
 
         } //if Human
