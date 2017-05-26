@@ -15,5 +15,6 @@
     <string name="messageFalse">ไม่มี User นี้ในฐานข้อมูลของเรา</string>
     <string name="titlePassword">Password ผิด</string>
     <string name="messagePassword">กรุณาลองใหม่ Password ผิด</string>
+    <string name="title_activity_detail">Map</string>
 
 </resources>

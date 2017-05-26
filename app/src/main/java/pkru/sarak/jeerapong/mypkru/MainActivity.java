@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 if (userString.equals(jsonObject.getString(columnStrings[2]))) {
                     aBoolean = false;
-                    for (int i1=0;i1<columnStrings.length;i++) {
+                    for (int i1=0;i1<columnStrings.length;i1++) {
                         loginStrings[i1] = jsonObject.getString(columnStrings[i1]);
                         Log.d("25MayV2", "loginString(" + i1 + ")==>" + loginStrings[i1]);
 
@@ -120,6 +120,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // Password True
                 Toast.makeText(MainActivity.this,
                         "Welcom "+ loginStrings[1], Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, ServeActivity.class);
+                intent.putExtra("Login", loginStrings);
+                startActivity(intent);
+                finish();
+
             } else {
                 // Password False
                 MyAlert myAlert = new MyAlert(this);
